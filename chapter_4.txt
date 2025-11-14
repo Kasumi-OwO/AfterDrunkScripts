@@ -62,3 +62,5 @@ changeFigure: anon/casual/model.json -id=a -transform={"position":{"y":400},"sca
 :素世抱着她，轻轻拍着她的背，声音里是满溢的宠溺与安心，;
 长崎素世:我知道了。;
 :这一次，再也没有什么需要确认的了。;
+
+changeFigure:kasumi/school_summer-2023/model.json -motion=kasumi_serious01 -expression=kasumi_serious01;

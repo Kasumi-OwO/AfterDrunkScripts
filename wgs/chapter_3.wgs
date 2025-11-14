@@ -1,21 +1,20 @@
-# 除了对话，其他语句没有在下面写pause语句，翻译后均认为带有-next参数
-character anon(千早爱音. anon/居家服anon/model.json)
+
+character anon(千早爱音, anon/居家服anon/model.json)
 character soyo(长崎素世, soyo/casual/model.json)
-# 定义id为anon和soyo的character，说话时用第一个参数作为名字，变更模型时用第二个参数作为模型
+
 
 scene B（soyo家）/B19.jpg:
     transform:
         duration: 500
 
 show anon:
-    transform: # transform内部所有都按照键-值的形式，键值中间使用空格，键值之间不区分换行符和空格等空白字符
+    transform:
         xpos -500 ypos 400
         xscale 1.25, yscale 1.25 
         alpha 0
         duration 500
     motion soyo_sad02
     expression anon_shame04
-    # 没写motion就是翻译之后也没有-motion参数，expression也是
 
 show soyo:
     transform:
@@ -26,7 +25,7 @@ show soyo:
     motion soyo_nf04
     expression soyo_smile01
 
-transform anon: # 使用之前被使用过的参数，除了duration之外都可以可以被保存，之前也没被定义过则翻译后也没有，duration没被定义翻译后默认为0
+transform anon:
     alpha 1
     duration 500
 
@@ -92,17 +91,17 @@ transform soyo:
 
 晨光透过落地窗，在她身上和餐桌上都镀上了一层柔和的金色光晕。
 
-那场景平静得……就好像昨晚的一切都只是一场荒诞的噩梦。
+那场景平静得……就好像昨晚的一切都只是一场荒诞的噩梦。"""
 
 show soyo
 
-素世面前只有一杯红茶。而在她对面的位置上，却摆放着一份准备得一丝不苟的早餐——
+"""素世面前只有一杯红茶。而在她对面的位置上，却摆放着一份准备得一丝不苟的早餐——
 
-一盘切得整整齐齐、露出新鲜草莓和芒果的水果三明治，旁边是几片泛着诱人光泽的熏三文鱼，还配了一小杯橙汁。
+一盘切得整整齐齐、露出新鲜草莓和芒果的水果三明治，旁边是几片泛着诱人光泽的熏三文鱼，还配了一小杯橙汁。"""
 
 show anon
 
-全都是她喜欢吃的东西。"""
+"全都是她喜欢吃的东西。"
 
 show soyo
 
@@ -217,3 +216,50 @@ show anon
 show anon
 
 anon "……我觉得，这种事……应该是和喜欢的人……才能做的……"
+
+show soyo
+
+"听到爱音那句近乎哀求的辩解，素世忽然轻轻叹了口气。"
+
+"那声叹息里没有不耐烦，反而像是在怜惜她的固执。"
+
+show soyo
+
+"目光前所未有地坦然而坚定，笔直地迎向爱音闪躲的视线。"
+
+soyo "我喜欢你。"
+
+show anon
+
+anon "欸……？"
+
+soyo "这，还不够吗？"
+
+"她说得很慢、很清晰，每一个字都像一颗投入深潭的石子，在爱音混乱的心中激起巨大的涟漪。"
+
+"爱音彻底怔住了，睫毛剧烈地颤抖着。她感觉自己像是被这句话钉在了原地，无法动弹。"
+
+"素世的告白，像一道过于强烈的光，照进了她为自己构筑的、名为“罪恶”的黑暗洞穴里，让她无所遁形。"
+
+show anon
+
+"脑海里不受控制地闪过昨晚的片段——她说“好喜欢”时，素世那一瞬间的震惊与失神。"
+
+"还有此刻，她眼里那份没有丝毫责怪，只有全然认真和等候的光。"
+
+"这两幕重叠在一起，形成了一个让爱音无法理解的悖论。"
+
+"空气安静得令人窒息。"
+
+transform soyo:
+    ypos 200
+    duration 500
+pause
+
+transform soyo:
+    xpos -300
+    duration 2000
+
+"素世看出了她的挣扎，于是慢慢地站起来，绕过餐桌，走到了她的面前，轻轻地捧起了她的脸。"
+
+"两人近得几乎能感受到彼此呼吸的热气。"
