@@ -1,0 +1,219 @@
+# 除了对话，其他语句没有在下面写pause语句，翻译后均认为带有-next参数
+character anon(千早爱音. anon/居家服anon/model.json)
+character soyo(长崎素世, soyo/casual/model.json)
+# 定义id为anon和soyo的character，说话时用第一个参数作为名字，变更模型时用第二个参数作为模型
+
+scene B（soyo家）/B19.jpg:
+    transform:
+        duration: 500
+
+show anon:
+    transform: # transform内部所有都按照键-值的形式，键值中间使用空格，键值之间不区分换行符和空格等空白字符
+        xpos -500 ypos 400
+        xscale 1.25, yscale 1.25 
+        alpha 0
+        duration 500
+    motion soyo_sad02
+    expression anon_shame04
+    # 没写motion就是翻译之后也没有-motion参数，expression也是
+
+show soyo:
+    transform:
+        xpos 500 ypos 300
+        xscale 1.25, yscale 1.25
+        alpha 0
+        duration 500
+    motion soyo_nf04
+    expression soyo_smile01
+
+transform anon: # 使用之前被使用过的参数，除了duration之外都可以可以被保存，之前也没被定义过则翻译后也没有，duration没被定义翻译后默认为0
+    alpha 1
+    duration 500
+
+"直到双腿都有些麻木，爱音仍没能完全接受现实，只是坐在地上，凝视着窗外的天空。时间越久，负罪感便愈发沉重。" # 旁白
+
+transform anon:
+    ypos 300
+    duration 500
+
+"""可逃避终究解决不了任何问题。不知在冰冷的地板上坐了多久，她终于还是鼓起勇气，像赴刑场般，扶着床沿，摇摇晃晃地站起身来。
+
+她伸手去握住门把手，手心里全是冷汗。冰凉的金属仿佛要把她体内最后一点温度也夺走。她深吸一口气，用力一拧，门吱呀一声开出了一条细缝。""" # 多行语句，此处为旁白，对人物对话也有效
+
+show anon anon_sad01 anon_shame04 # 快速动作，第一个为motion 第二个为expression
+
+dissolve B（soyo家）/B9.png:
+    out:
+        transform anon:
+            xpos -800
+            alpha 0
+            duration 1000
+    in:
+        show anon anon_sad02 anon_shame04
+        transform anon:
+            xpos -500
+            alpha 1
+            duration 1000
+
+# 这里的dissolve语句等于
+# hide text
+# transform anon:
+#     xpos -800
+#     alpha 0
+#     duration 1000
+# transform bg:
+#     alpha 0
+#     duration 500
+# pause
+# scene B（soyo家）/B9.png:
+#     transform:
+#         alpha 0
+#         duration 500
+# transform bg:
+#     alpha 1
+#     duration 500
+# show anon anon_sad02 anon_shame04
+# transform anon:
+#     xpos -500
+#     alpha 1
+#     duration 1000
+# pause
+# show text
+
+"门外的世界明亮得刺眼。"
+
+transform soyo:
+    alpha 1
+    duration 500
+
+"""客厅里一尘不染，与客房内的狼藉仿佛是两个世界。素世已经换上了一件柔软的米白色家居服，长发整齐地披在肩上。
+
+她正安静地坐在餐桌旁，一手捧着白色的瓷杯，杯中是氤氲着热气的红茶，另一只手正拿着小勺，有一搭没一搭地搅动着。
+
+晨光透过落地窗，在她身上和餐桌上都镀上了一层柔和的金色光晕。
+
+那场景平静得……就好像昨晚的一切都只是一场荒诞的噩梦。
+
+show soyo
+
+素世面前只有一杯红茶。而在她对面的位置上，却摆放着一份准备得一丝不苟的早餐——
+
+一盘切得整整齐齐、露出新鲜草莓和芒果的水果三明治，旁边是几片泛着诱人光泽的熏三文鱼，还配了一小杯橙汁。
+
+show anon
+
+全都是她喜欢吃的东西。"""
+
+show soyo
+
+"""在爱音还怔在原地时，素世终于停下了搅拌的动作，瓷勺与杯壁碰撞，发出一声清脆的轻响。
+
+她没有回头，只是用一种近乎日常的平淡语气，轻声说了句："""
+
+soyo "坐下来吃吧。"
+
+show anon
+
+"爱音咬着唇，磨磨蹭蹭地走到餐桌旁，却不敢坐下，只是绞着衣角。"
+
+anon "那个……我真的不是故意的……"
+
+"爱音低着头，不敢看素世的眼睛，声音抖得厉害，带着哭腔。"
+
+anon "昨晚……全都是酒精的错。"
+
+show anon
+
+anon "我、我没有想伤害你的意思……真的……对不起。"
+
+"爱音越说越混乱，最后几乎是语无伦次地补充道"
+
+show anon
+
+anon "如果你生气了……或者觉得我恶心……怎么对我都可以，骂我也好，打我也好……只要你能原谅我，我什么都愿意做。"
+
+show anon
+
+"说完，她便紧紧闭上眼，等待着预想中的责骂或是冷漠的回应。
+
+然而，等来的却是一阵长久的沉默。"
+
+show soyo
+
+"沉默过后，是瓷杯被轻轻放回茶碟上的、一声清脆的响声。"
+
+show anon
+
+"爱音忍不住偷偷掀开一条眼缝，看到素世正慢慢地抬起头，目光平静地落在她脸上。
+
+那眼神里没有愤怒，没有厌恶，也没有怜悯，只是一种纯粹的、不带情绪的注视。"
+
+"过了两秒，素世用一种仿佛在说“要加点糖吗”的日常语气，平静地开口"
+
+show soyo
+
+soyo "嗯……那来现在亲我一口吧"
+
+show anon
+
+anon "……诶？"
+
+"爱音猛地睁大眼睛，脑子瞬间一片空白，完全以为自己听错了。"
+
+show anon
+
+"爱音慌乱地摆着手，像要拨开身前无形的压力。"
+
+"她下意识地看向素世，希望能从对方脸上找到一丝开玩笑的痕迹。"
+
+"但素世的表情没有任何变化。"
+
+anon "啊、不是……Soyosan，我……"
+
+show soyo
+
+"那份过度的平静本身就是一种巨大的压迫。"
+
+"直到她脱口而出的那个称呼，才让那张平静的脸谱出现了一丝裂痕。"
+
+"素世的眉间几不可察地微微蹙起。"
+
+soyo "你叫我什么？"
+
+"她的声音不高，却像冰锥一样刺入爱音的耳中。"
+
+show anon
+
+anon "Soyosan，我……"
+
+"爱音还想辩解，却被对方打断了。"
+
+show soyo
+
+soyo "Soyorin。"
+
+"素世吐字清晰，像是在纠正一个被念错的、至关重要的音节。"
+
+show anon
+
+"这不是请求，而是命令。"
+
+show anon
+
+"这个称呼在爱音的舌尖上打了好几个滚，又烫又重。"
+
+show anon
+
+"在素世不容拒绝的注视下，她最终还是败下阵来，像是用尽了全身的力气，才把这个代表着亲密的词语从喉咙里挤出来。"
+
+show anon
+
+"……Soyo……rin……"
+
+"说出这个名字的瞬间，仿佛也耗尽了她最后的防御。"
+
+"她抬起头，眼里第一次带上了恳求的神色，声音微弱得像随时会碎掉。"
+
+show anon
+
+anon "……我觉得，这种事……应该是和喜欢的人……才能做的……"
