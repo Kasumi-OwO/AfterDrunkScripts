@@ -98,7 +98,7 @@ changeFigure:soyo/居家服soyo/model.json -id=s -next -motion=soyo_nf_left01 -e
 changeFigure:soyo/居家服soyo/model.json -id=s -next -motion=soyo_nf_right01 -expression=soyo_smile01;
 setTransform:{"position":{"x":800,"y":300},"scale":{"x":1.25,"y":1.25},"alpha":1} -target=s -duration=2000 -next;
 : 她转身走向门口，背影没有丝毫怒气，这反而让爱音更加心慌。在手搭上门把时，素世才头也不回地轻声说：;
-长崎素世: 我去把茶热一下。你慢慢想清楚。;
+长崎素世: 我去把茶热一下。你慢慢想清楚吧。;
 setTransform:{"position":{"x":800,"y":300},"scale":{"x":1.25,"y":1.25},"alpha":0} -target=s -duration=500 -next;
 : 门的闭合，将寂静还给了这间历经整夜风波的客房。;
 changeFigure:anon/居家服anon/model.json -id=a -next -motion=anon_serious02 -expression=anon_shame04;
