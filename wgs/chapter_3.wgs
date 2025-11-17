@@ -2,28 +2,31 @@
 character anon(千早爱音, anon/居家服anon/model.json)
 character soyo(长崎素世, soyo/casual/model.json)
 
-
 scene B（soyo家）/B19.jpg:
     transform:
-        duration: 500
+        alpha 1
+        duration 500
 
 show anon:
-    transform:
-        xpos -500 ypos 400
-        xscale 1.25, yscale 1.25 
-        alpha 0
-        duration 500
     motion soyo_sad02
     expression anon_shame04
 
+transform anon:
+    xpos -500 ypos 400
+    xscale 1.25, yscale 1.25 
+    alpha 0
+
 show soyo:
-    transform:
-        xpos 500 ypos 300
-        xscale 1.25, yscale 1.25
-        alpha 0
-        duration 500
     motion soyo_nf04
     expression soyo_smile01
+
+transform soyo:
+    xpos 500 ypos 300
+    xscale 1.25, yscale 1.25
+    alpha 0
+
+show text
+pause
 
 transform anon:
     alpha 1
@@ -147,7 +150,7 @@ show anon
 
 那眼神里没有愤怒，没有厌恶，也没有怜悯，只是一种纯粹的、不带情绪的注视。"
 
-"过了两秒，素世用一种仿佛在说“要加点糖吗”的日常语气，平静地开口"
+"过了两秒，素世用一种仿佛在说“要加点糖吗”的日常语气，平静地开口："
 
 show soyo
 
@@ -225,7 +228,7 @@ show soyo
 
 show soyo
 
-"目光前所未有地坦然而坚定，笔直地迎向爱音闪躲的视线。"
+素世抬起眼，目光前所未有地坦然而坚定，笔直地迎向爱音闪躲的视线。
 
 soyo "我喜欢你。"
 
@@ -264,7 +267,7 @@ transform soyo:
 
 "两人近得几乎能感受到彼此呼吸的热气。"
 
-show soyo   
+show soyo
 
 soyo 你不需要现在回答我，
 
@@ -360,6 +363,10 @@ show anon
 
 show soyo
 
+transform anon:
+    xpos -400
+    duration 2000
+
 那是一个极其短暂、笨拙，甚至带着绝望意味的碰触。
 
 show anon
@@ -425,5 +432,78 @@ show anon
 show anon
 
 transform anon:
+    xpos -500
+    duration 2000
 
 许久之后，唇瓣才带着湿润的水声与不舍的喘息分开。
+
+show anon
+
+爱音怔怔地看着眼前的人，眼眶里不知不觉已经蓄满了泪水。
+
+show soyo
+
+素世抬起手，用指腹轻轻拭去她眼角的湿润，声音因为刚才的深吻而低哑，却温柔得不可思议：
+
+soyo ……现在，你懂了吗？
+
+show anon
+
+爱音的眼泪再也忍不住，大颗地滚落下来，她带着浓重的鼻音，像个迷路后终于找到家的孩子，用力地点了点头，声音破碎不成调。
+
+anon ……对不起……我以为……我以为你……
+
+show soyo
+
+soyo 笨蛋。
+
+素世笑了，那笑容像是驱散了所有阴霾的、春日午后的阳光。
+
+她凑上前，在爱音那哭得通红的鼻尖上，落下了一个羽毛般轻柔的吻。
+
+show soyo
+
+soyo 我也是，爱音。
+
+她抵着她的额头，用只有她们两人能听到的声音，轻声说：
+
+show soyo
+
+soyo 我也早就喜欢你了。
+
+阳光斜斜地照进房间，餐桌上为爱音准备的早餐，热气已经渐渐散去。
+
+空气中，茶的温香与昨夜残存的“星尘梦境”里葡萄与接骨木花的甜香，终于不再是罪证的提醒，而是温柔地交织在一起，成了她们心意相通的背景音。
+
+transform anon:
+    xpos -450
+    duration 1000
+
+transform soyo:
+    xpos -350
+    duration 1000
+
+show anon
+
+show soyo
+
+她们没有再说话，只是静静地相拥。
+
+像是终于逃离了那场由误解引发的漫长风暴，拥抱住了那个最简单，也最珍贵的真相。
+
+transform anon:
+    alpha 0
+    duration 500
+
+transform soyo:
+    alpha 0
+    duration 500
+
+transform bg:
+    alpha 0
+    duration 500
+
+——她们都深爱着对方，一直都是。
+
+hide text
+pause

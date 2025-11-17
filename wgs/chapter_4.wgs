@@ -1,0 +1,28 @@
+
+character anon(千早爱音, anon/casual/model.json)
+character soyo(长崎素世, soyo/casual/model.json)
+
+character kasumi(星动香澄喵, kasumi/school_summer-2023/model.json)
+
+scene B（soyo家）/B19.jpg:
+    transform:
+        alpha 1
+        duration 500
+
+show anon:
+    motion soyo_sad02
+    expression anon_shame04
+
+transform anon:
+    xpos -500 ypos 300
+    xscale 1.25, yscale 1.25 
+    alpha 0
+
+show soyo:
+    motion soyo_nf04
+    expression soyo_smile01
+
+transform soyo:
+    xpos 500 ypos 300
+    xscale 1.25, yscale 1.25
+    alpha 0
