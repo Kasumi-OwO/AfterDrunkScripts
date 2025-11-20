@@ -1,5 +1,9 @@
-changeBg:B（soyo家）/B19.jpg -next -duration=500 -transform={};
-changeFigure:anon/casual/model.json -id=anon -duration=500 -next -motion=soyo_sad02 -expression=anon_shame04;
-setTransform:{"position":{"x":-500,"y":300},"scale":{"x":1.25,"y":1.25},"alpha":0} -target=anon -duration=0 -next;
 changeFigure:soyo/casual/model.json -id=soyo -duration=500 -next -motion=soyo_nf04 -expression=soyo_smile01;
-setTransform:{"position":{"x":500,"y":300},"scale":{"x":1.25,"y":1.25},"alpha":0} -target=soyo -duration=0 -next;
+setTransform:{"position":{"x":500,"y":100},"scale":{"x":1.25,"y":1.25},"alpha":0} -target=soyo -duration=0 -next;
+changeBg:B（soyo家）/B9.png -next -transform={};
+changeFigure:anon/casual/model.json -id=anon -duration=500 -next -motion=anon_nf04 -expression=anon_smile01;
+setTransform:{"position":{"x":0,"y":400},"scale":{"x":1.25,"y":1.25},"alpha":0,"rotation":1.3089969389957472} -target=anon -duration=0 -next;
+: 那场风波过去一周后的某个周六下午，阳光正好。;
+setTransform:{"position":{"x":0,"y":400},"scale":{"x":1.25,"y":1.25},"alpha":1,"rotation":1.3089969389957472} -target=anon -duration=500 -next;
+setTransform:{"position":{"x":500,"y":100},"scale":{"x":1.25,"y":1.25},"alpha":1} -target=soyo -duration=500 -next;
+: 素世家的客厅里，爱音正毫无形象地瘫在沙发上，头枕在素世的大腿上，心不在焉地刷着手机，同时感受着恋人指尖轻柔地穿过她粉色发丝的触感。;
