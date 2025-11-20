@@ -4,6 +4,10 @@ character soyo(长崎素世, soyo/casual/model.json)
 
 character kasumi(星动香澄喵, kasumi/school_summer-2023/model.json)
 
+scene B（soyo家）/B9.png:
+    transform:
+        alpha 0
+
 show soyo:
     motion soyo_nf04
     expression soyo_smile01
@@ -12,10 +16,6 @@ transform soyo:
     xpos 500 ypos 100
     xscale 1.25, yscale 1.25
     alpha 0
-
-scene B（soyo家）/B9.png:
-    transform:
-        alpha 0
 
 show anon:
     motion anon_nf04
@@ -26,6 +26,14 @@ transform anon:
     xscale 1.25, yscale 1.25
     rotate 1.3089969389957472
     alpha 0
+
+show kasumi:
+    transform:
+        alpha 0
+        xpos 0 ypos 100
+        xscale 1.25 yscale 1.25
+    motion soyo_nf04
+    expression soyo_smile01
 
 show text
 
@@ -56,9 +64,6 @@ show soyo
 soyo 你还敢提那天晚上的事？
 
 anon 嘿嘿……
-
-trasnform anon:
-    rotate 0
 
 show anon
 
@@ -98,4 +103,216 @@ anon 我就说嘛！
 
 anon 我点的就是果汁饮料，明明就没错！
 
+show soyo
+
 她气呼呼的样子把素世逗笑了。
+
+show anon
+
+anon 当时喝完没过多久我就感觉头好晕……之后就只剩下一些模模糊糊的记忆
+
+anon 我只记得我当时好像亲了你，剩下的很多细节都记不起来了……
+
+transform anon:
+    rotate 0
+    xpos -300 ypos 100
+    duration 1000
+
+show anon
+
+爱音干脆扔掉了手机。她从素世的大腿上坐起身，小心翼翼地侧过身子，紧贴着素世坐好。
+
+transform anon:
+    xpos 100
+    duration 1500
+
+随后，她才圈住素世的腰，把下巴抵在恋人的肩膀上，声音也跟着低了下去。
+
+show anon
+
+anon ……我刚醒的时候，真的快吓死了。
+
+anon 看到你身上的那些痕迹，我就想，呜啊，完了，我真的把你强X了。
+
+她说得坦然，语气里却还残留着一丝后怕。
+
+show soyo
+
+soyo 噗……
+
+素世没忍住，轻轻弹了一下她的额头。
+
+soyo 笨蛋。你脑子里都在想些什么？
+
+show anon
+
+anon 我当时脑子都乱了嘛！
+
+爱音委屈地嘟囔。
+
+anon 你平时……有时候对我还挺凶的，我以为你肯定不愿意，是被我……
+
+show soyo
+
+soyo 所以……
+
+素世转过头，眼底满是温柔的笑意。
+
+soyo 你就认定自己是“加害者”，而我是个善良过头，被迫包容你的“受害者”？
+
+show anon
+
+anon ……嗯。
+
+爱音红着脸，诚实地点了点头。
+
+show soyo
+
+soyo 那让我这个“受害者”问一下
+
+素世的指尖轻轻点上爱音的嘴唇。
+
+soyo 那天早晨，当“加害者”小姐吻我的时候，你在想什么？
+
+show anon
+
+anon 我当时真的好绝望……感觉自己没有退路了……大脑一片空白
+
+show soyo
+
+soyo 那后来呢？
+
+show anon
+
+anon 后来……
+
+爱音的眼神变得柔软起来，她回忆着那个改变了一切的吻。
+
+anon 后来就觉得……你不像是在生气。
+
+anon 你的回应……太温柔了，温柔到让我觉得……或许，你也是愿意的？
+
+show soyo
+
+soyo 不是或许。
+
+素世认真地纠正她。
+
+soyo 我一直都愿意。
+
+show anon
+
+她看着爱音那双因为惊讶而微微睁大的眼睛，终于坦白了自己那天的全部心声
+
+show soyo
+
+soyo 强迫你亲我，是因为我不知道除了那样做，还能用什么方法让你明白……
+
+soyo ……我早就喜欢你了。
+
+show soyo
+
+soyo 爱音，我才是那个更害怕被你拒绝的人。
+
+阳光穿过玻璃，在她们身边的地毯上投下温暖的光斑，空气中浮动的金色微尘就像那天酒吧里，“星尘梦境”中流转的闪粉。
+
+show anon
+
+anon ……Soyorin，
+
+爱音吸了吸鼻子，眼眶有点发热。
+
+anon 你好狡猾。
+
+show soyo
+
+soyo 嗯？
+
+show anon
+
+anon 你太狡猾了，总是让我先说“喜欢”。
+
+transform soyo:
+    xpos 400
+    duration 1000
+
+show soyo
+
+show anon
+
+素世笑了，她没有反驳，只是主动地、轻轻地吻了上去。
+
+这个吻，不再有任何试探、误解与不安。
+
+只有阳光、红茶和彼此发丝间洗发水的清甜香气。
+
+transform soyo:
+    xpos 500
+    duration 1000
+
+show soyo
+
+show anon
+
+一吻结束，爱音把脸深深埋进素世的颈窝里，闷闷地、却又无比清晰地说了句：
+
+anon 我喜欢你。
+
+show soyo
+
+soyo 嗯。
+
+素世抱着她，轻轻拍着她的背，声音里是满溢的宠溺与安心。
+
+show soyo
+
+soyo 我知道了。
+
+这一次，再也没有什么需要确认的了。
+
+transform anon:
+    alpha 0
+    duration 500
+
+transform soyo:
+    alpha 0
+    duration 500
+
+transform bg:
+    alpha 0
+    duration 500
+
+hide text
+pause
+
+transform kasumi:
+    alpha 1
+    duration 500
+
+show kasumi
+
+show text
+
+kasumi 到这里就是全部啦
+
+show kasumi
+
+kasumi 好久之前的想法了，虽然但是这篇文出来已经和我最早的想法不是同一个东西了（
+
+show kasumi
+
+kasumi 逻辑上可能会有些错误，还请见谅
+
+show kasumi
+
+kasumi 如果能看的开心的话就太好了
+
+show kasumi
+
+kasumi btw星尘梦境只是我让ai生成的爱音会喜欢的网红鸡尾酒，我根本没接触过酒吧甚至酒这种东西XD
+
+transform kasumi:
+    alpha 0
+    duration 500
+
+hide text
